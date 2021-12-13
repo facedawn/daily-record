@@ -15,3 +15,12 @@ git branch -a //会把远程的分支也显示出来
 git breanch //显示本地分支
 
 git rebase master //在哪个分支上把master更新到当前分支上
+
+git remote -v //查看远程仓库地址
+
+git remote add upstream git@github.com/xxxx.git //添加远程仓库
+
+git fetch upstream
+
+git merge upstream/main
+
