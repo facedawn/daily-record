@@ -24,3 +24,7 @@ git fetch upstream
 
 git merge upstream/main
 
+
+# git clone 时GnuTLS recv error(-110)
+git clone  --recursive https://xxxxx
+
