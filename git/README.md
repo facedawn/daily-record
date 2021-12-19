@@ -24,7 +24,27 @@ git fetch upstream
 
 git merge upstream/main
 
+# git clone 指定分支
+第一步： git clone [git-url] -b [branch-name]
+
+第二步：git reset --hard [commit-number]    //回退几个commit版本
+
 
 # git clone 时GnuTLS recv error(-110)
 git clone  --recursive https://xxxxx
 
+# git clone 指定版本号的版本
+切换到指定的版本号：
+
+git checkout 17def2f
+
+新建分支
+
+git checkout -b branch
+
+这时候，就下载到你想要的版本的代码了。
+
+# git clone 时 server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
+关闭系统的安全认证。
+能解决所有证书问题，操作简单，系统面临一定的风险。
+export GIT_SSL_NO_VERIFY=1

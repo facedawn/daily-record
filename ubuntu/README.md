@@ -2,7 +2,7 @@
 code-server(code-server)
 nacos(ubuntu):path/start-nacos.sh
 redis(ubuntu):service redis start
-rocketMQ(code-server):nohup sh bin/mqnamesrv &  |  nohup sh bin/mqbroker -n localhost:9876 &
+rocketMQ(code-server):nohup sh bin/mqnamesrv &  |  nohup sh mqbroker -n localhost:9876 -c ../conf/broker.conf &   (记得切jdk版本到8以下)
 mysql(ubuntu):service mysql start
 qqbot
 
@@ -21,3 +21,14 @@ update-alternatives --config java 可以用来切换java版本，管理java版�
 update-alternatives --install <链接> <名称> <路径> <优先级>  用来加入版本信息
 
 # netstat -ntlp 查看端口监听情况
+
+# free -m 查看内存使用情况
+
+# echo 3 > /proc/sys/vm/drop_caches 清除缓存
+
+# ifconfig 查看网卡配置信息
+
+# screen 进入attached状态的screen
+screen -D  -r ＜session-id>
+
+-D -r  先踢掉前一用户，再登陆。
