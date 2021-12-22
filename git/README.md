@@ -48,3 +48,8 @@ git checkout -b branch
 关闭系统的安全认证。
 能解决所有证书问题，操作简单，系统面临一定的风险。
 export GIT_SSL_NO_VERIFY=1
+
+# 该命令直接放弃所有修改代码,并更新到版本库最新版本代码;
+1. git fetch --all
+2. git reset --hard origin/master
+3. git pull
