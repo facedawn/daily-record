@@ -4,6 +4,7 @@ nacos(ubuntu):path/start-nacos.sh
 redis(ubuntu):service redis start
 rocketMQ(code-server):nohup sh bin/mqnamesrv &  |  nohup sh mqbroker -n localhost:9876 -c ../conf/broker.conf &   (记得切jdk版本到8以下)
 mysql(ubuntu):service mysql start
+crondtab: service cron start
 qqbot
 
 # nano
@@ -32,3 +33,5 @@ update-alternatives --install <链接> <名称> <路径> <优先级>  用来加�
 screen -D  -r ＜session-id>
 
 -D -r  先踢掉前一用户，再登陆。
+
+# statnet -ntl 查看服务监听端口情况

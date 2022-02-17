@@ -53,3 +53,6 @@ export GIT_SSL_NO_VERIFY=1
 1. git fetch --all
 2. git reset --hard origin/master
 3. git pull
+
+# OpenSSL SSL_read: Connection was reset, errno 10054
+换到终端push
