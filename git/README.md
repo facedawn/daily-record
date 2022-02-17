@@ -56,3 +56,6 @@ export GIT_SSL_NO_VERIFY=1
 
 # OpenSSL SSL_read: Connection was reset, errno 10054
 换到终端push
+
+# git更改本地仓库的远端地址
+直接修改.git下面的config文件
